@@ -1,18 +1,167 @@
-
 <ion-navbar *navbar>
-  <ion-title>
-    Ne-Waza - Bodentechniken
-  </ion-title>
+    <ion-title>
+        Ne-Waza - Bodentechniken
+    </ion-title>
 </ion-navbar>
 
 <ion-content class="page3">
-    
+
     <main class="col-md-9" role="main">
-                <div id="c481"><h1 class="first-headline">Einteilung</h1><div class="text"><p><b>Osae-komi-waza</b> (Festhaltetechniken) Mit Haltetechniken wird der geworfene Partner in der Rückenlage am Boden fixiert. Werden sie gut ausgeführt, ist es, selbst mit speziellen Befreiungstechniken, sehr schwierig, sich aus diesen zu befreien.
-</p>
-<p><b>Kansetsu-waza</b> (Hebeltechniken) Hebeltechniken werden im Judo nur auf den <a href="http://de.wikipedia.org/wiki/Ellbogengelenk" title="Ellbogengelenk" target="_blank">Ellenbogen</a> angewandt, wobei kontrollierter Druck auf das Gelenk aufgebracht und der Partner zugleich fixiert wird.
-</p>
-<p><b>Shime-waza</b> (Würgetechniken) Wie beim Hebeln ist es Ziel des Würgen den Gegner zur Aufgabe zu zwingen</p></div></div><nav id="c480"><h1>Seitenstruktur</h1><dl class="csc-menu csc-menu-4"><dt><a href="/ueber-judo/bodentechniken-ne-waza/haltegriffe/" title="Haltegriffe">Haltegriffe</a></dt><dd>&nbsp;</dd><dt><a href="/ueber-judo/bodentechniken-ne-waza/hebeltechniken/" title="Hebeltechniken">Hebeltechniken</a></dt><dd>&nbsp;</dd><dt><a href="/ueber-judo/bodentechniken-ne-waza/wuergetechniken/" title="Würgetechniken">Würgetechniken</a></dt><dd>&nbsp;</dd><dt><a href="/ueber-judo/bodentechniken-ne-waza/handlungskomplexe-am-boden/" title="Handlungskomplexe am Boden">Handlungskomplexe am Boden</a></dt><dd>&nbsp;</dd></dl></nav>
-            </main>
+        <div id="c481">
+            <h1 class="first-headline">Einteilung</h1>
+            <div class="text">
+                <p><b>Osae-komi-waza</b> (Festhaltetechniken) Mit Haltetechniken wird der geworfene Partner in der Rückenlage
+                    am Boden fixiert. Werden sie gut ausgeführt, ist es, selbst mit speziellen Befreiungstechniken, sehr
+                    schwierig, sich aus diesen zu befreien.
+                </p>
+                <p><b>Kansetsu-waza</b> (Hebeltechniken) Hebeltechniken werden im Judo nur auf den <a href="http://de.wikipedia.org/wiki/Ellbogengelenk"
+                    title="Ellbogengelenk" target="_blank">Ellenbogen</a> angewandt, wobei kontrollierter Druck auf das Gelenk
+                    aufgebracht und der Partner zugleich fixiert wird.
+                </p>
+                <p><b>Shime-waza</b> (Würgetechniken) Wie beim Hebeln ist es Ziel des Würgen den Gegner zur Aufgabe zu zwingen</p>
+            </div>
+        </div>
+    </main>
+
+    <div padding>
+        <ion-segment [(ngModel)]="Haltegriffe">
+
+            <ion-segment-button value="Haltegriffe">
+                Haltegriffe
+            </ion-segment-button>
+
+            <ion-segment-button value="Hebeltechniken">
+                Hebeltechniken
+            </ion-segment-button>
+
+            <ion-segment-button value="Wuergetechniken">
+                Würgetechniken
+            </ion-segment-button>
+
+            <ion-segment-button value="Handlungskomplexe">
+                Handlungskomplexe am Boden
+            </ion-segment-button>
+
+        </ion-segment>
+    </div>
+
+
+
+
+    <div [ngSwitch]="Haltegriffe">
+        <ion-list *ngSwitchWhen="'Haltegriffe'">
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Kesa-gatame</h2>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Kesa-gatame</h2>
+            </ion-item>
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Kesa-gatame</h2>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+        </ion-list>
+
+        <!-- Hebeltechniken -->
+
+        <ion-list *ngSwitchWhen="'Hebeltechniken'">
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+        </ion-list>
+
+        <!-- Wuergetechniken -->
+
+        <ion-list *ngSwitchWhen="'Wuergetechniken'">
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Ude-gerami</h2>
+            </ion-item>
+        </ion-list>
+
+        <!-- Wuergetechniken -->
+
+        <ion-list *ngSwitchWhen="'Handlungskomplexe'">
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://lorempixel.com/50/50/sports/">
+                </ion-thumbnail>
+                <h2>Handlungskomplexe</h2>
+            </ion-item>
+        </ion-list>
+
+    </div>
 
 </ion-content>
